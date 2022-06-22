@@ -42,7 +42,7 @@
           </div>
           <div class="row line"></div>
           <div class="row" style="flex-direction: column; position: relative">
-            <h6 class="title" style="position: absolute; top: 10px; left: 35px">
+            <h6 class="subtitle" style="position: absolute; top: 10px; left: 35px">
               小时节拍
             </h6>
             <div class="row fb-1-2">
@@ -82,7 +82,7 @@
         </Box>
         <Box class="col">
           <div class="row" style="flex-direction: column; position: relative">
-            <h6 class="title" style="position: absolute; top: 10px; left: 35px">
+            <h6 class="subtitle" style="position: absolute; top: 10px; left: 35px">
               小时节拍
             </h6>
             <div class="row fb-1-2">
@@ -519,21 +519,6 @@ export default {
     flex-basis: 1px;
     background-color: #0b4776;
   }
-  .title {
-    position: relative;
-    font-weight: normal;
-    color: #fff;
-    font-size: 18px;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 6px;
-      left: -16px;
-      width: 10px;
-      height: 10px;
-      background-color: #17a5ff;
-      border-radius: 50%;
-    }
-  }
+
 }
 </style>
