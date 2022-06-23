@@ -112,7 +112,7 @@ const opt1 = {
   backgroundColor: '',
   legend: {
     // orient: 'vertical',
-    selected: false,
+    selected: true,
     icon: 'circle',
     left: '10px',
     top: '10px',
@@ -462,33 +462,21 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(
-      to right,
-      rgba(15, 104, 175, 1),
-      rgba(2, 37, 79, 1)
-    );
+    background-image: linear-gradient(to right,rgba(15, 104, 175, 1),rgba(2, 37, 79, 1));
     .col {
       flex: 1;
       // text-align: center;
       &:nth-child(1) {
-        .num {
-          color: #fc8364;
-        }
+        .num { color: #fc8364;}
       }
       &:nth-child(2) {
-        .num {
-          color: #63c3df;
-        }
+        .num { color: #63c3df;}
       }
       &:nth-child(3) {
-        .num {
-          color: #79f4e5;
-        }
+        .num {color: #79f4e5;}
       }
       &:nth-child(4) {
-        .num {
-          color: #3e97fc;
-        }
+        .num { color: #3e97fc;}
       }
       // 3e97fc
       &:not(:last-child) {
