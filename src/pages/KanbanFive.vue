@@ -1,6 +1,8 @@
 <template>
   <Container id="KanbanFour">
-    <div class="head"><Head></Head></div>
+    <div class="head">
+      <Head></Head>
+    </div>
     <div class="main">
       <div
         class="row"
@@ -593,10 +595,6 @@ const opt4 = {
         color: '#fff',
         rotate: 30,
       },
-      // splitLine: {
-      //   show: true,
-      //   lineStyle: { color: '#717b93' },
-      // },
       data: ['08:37', '08:49', '08:52', '08:53', '09:01', '09:03', '09:32', '09:43', '09:58', '10:59'],
     },
   ],
@@ -686,6 +684,7 @@ $red:#f12a42;
 #KanbanFour {
   .head {
     flex-basis: 70px;
+    padding: 0 10px;
   }
   .main {
     flex: 1;

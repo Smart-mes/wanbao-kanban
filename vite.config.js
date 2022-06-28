@@ -19,7 +19,13 @@ export default defineConfig({
   //     },
   //   },
   // },
-
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/assets/css/style.scss";',
+      },
+    },
+  },
   plugins: [
     createVuePlugin(),
     dynamicImport(),

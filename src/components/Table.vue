@@ -2,14 +2,16 @@
     <el-table
     class="kanban-table"
     style="width: 100%"
-    v-bind="$attrs"
+    :border="border"
+    :stripe="stripe"
     :size="size"
     :data="data"
   >
-    <el-table-column v-for="c in cols" :key="c.prop" :label="c.name">
+   <!-- v-bind="$attrs" -->
+    <el-table-column v-for="(c) in cols" :key="c.prop" :label="c.name" v-bind="c.attr">
       <template slot-scope="scope">
-        <template v-if="c.prop === 'slot'">
-          <slot :scope="scope.row"/>
+        <template v-if="c.isSlot">
+          <slot :name="c.prop" :scope="scope.row"></slot>
         </template>
         <span v-else>{{ scope.row[c.prop] }}</span>
       </template>
@@ -21,10 +23,14 @@
 export default {
   name: 'Table',
   props: {
-    // border: {
-    //   type: Boolean,
-    //   default: true,
-    // },
+    stripe: {
+      type: Boolean,
+      default: false,
+    },
+    border: {
+      type: Boolean,
+      default: true,
+    },
     size: {
       type: String,
       default: 'mini',

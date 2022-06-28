@@ -36,7 +36,7 @@
             </div>
             <div class="col fb-1-2" style="align-items:center;justify-content: center;">
               <div style="width: 90%">
-                <Table :option="tableOpt1" :stripe='true' :border="true"></Table>
+                <Table :option="tableOpt1" :stripe='true' :border="true" size="mini"></Table>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
             </div>
             <div class="col fb-1-2" style="align-items:center;justify-content: center;">
               <div style="width: 90%">
-                <Table :option="tableOpt2" :stripe='true' :border="true"></Table>
+                <Table :option="tableOpt2" :stripe='true' :border="true" size="mini"></Table>
               </div>
             </div>
           </div>
