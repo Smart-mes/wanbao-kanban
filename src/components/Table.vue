@@ -92,7 +92,7 @@ export default {
    &.el-table--border,
    .el-table--group{
     border-color:  #185983;;
-    background-color: #001c44;;
+    background-color: #001c44;
     color: #eee;
   }
   &.el-table td.el-table__cell,

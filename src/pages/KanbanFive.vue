@@ -1,5 +1,5 @@
 <template>
-  <Container id="KanbanFour">
+  <Container id="KanbanFive">
     <div class="head">
       <Head></Head>
     </div>
@@ -655,7 +655,7 @@ const opt4 = {
   ],
 }
 export default {
-  name: 'KanbanFour',
+  name: 'KanbanFive',
   data() {
     return {
       opt1: null,
@@ -681,7 +681,7 @@ export default {
 <style lang="scss" scoped>
 $green:#00ed8b;
 $red:#f12a42;
-#KanbanFour {
+#KanbanFive {
   .head {
     flex-basis: 70px;
     padding: 0 10px;

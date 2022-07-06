@@ -1,6 +1,65 @@
+$f-12:12px;
 $f-14:14px;
 $f-16:16px;
 $red:#ff3333;
 $green:#2fbc92;
 $light-blue:#05f2ff;
+$blue:#1160ff;
+$yellow:#ffff00;
+$white:#fff;
 
+// TABLE
+  ::v-deep.tableNone.el-table td
+  {
+    //   border-color: #0b4776;
+      border: 0;
+    //   background-color: #001c44;;
+  }
+      ::v-deep.el-table--mini .el-table__cell {
+      padding: 4px 0;
+  }
+      ::v-deep.tableNone.el-table th.el-table__cell.is-leaf{
+      border: 0;
+   }
+
+   .BoxNone{
+    ::v-deep.top-left-border,
+    ::v-deep.top-right-border,
+    ::v-deep.bottom-left-border,
+    ::v-deep.bottom-right-border{
+      border: 0;
+    }
+   } 
+// 标题
+.circleDotTitle {
+  position: relative;
+  font-weight: normal;
+  color: #fff;
+  font-size: 18px;
+  padding-left: 15px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: #17a5ff;
+    border-radius: 50%;
+  }
+}
+.squareDotTitle{
+  position: relative;
+  padding-left:15px;
+  font-size: 18px;
+  color:#37fef5;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top:6px;
+    width: 8px;
+    height: 8px;
+    background-color:#37fef5 ;
+  }
+}

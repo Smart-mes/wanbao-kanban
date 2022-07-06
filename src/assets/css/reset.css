@@ -22,22 +22,7 @@ a,a:hover{color:#333;}
 /* 公共 */
 .fl{float:left;}
 .fr{float: right;}
-.subtitle {
-  position: relative;
-  font-weight: normal;
-  color: #fff;
-  font-size: 20px;
-}
-.subtitle::before {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: -16px;
-  width: 10px;
-  height: 10px;
-  background-color: #17a5ff;
-  border-radius: 50%;
-}
+
 /* 布局 */
 .row,
 .col {

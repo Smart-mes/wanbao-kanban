@@ -15,6 +15,7 @@
   padding: 10px;
   /* background: rgba(13, 20, 48, 0.8); */
   border: 1px solid #0b4776;
+  background-color: #001c44;
   /* box-shadow: 0 0 5px #086678 inset; */
 }
 
@@ -25,7 +26,7 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  border: 1px solid #0f598f;
+  border: 1px solid #2b81c2;
 }
 .top-left-border {
   top: -1px;

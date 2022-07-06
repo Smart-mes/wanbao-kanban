@@ -20,7 +20,7 @@ export default {
     padding: 0 10px;
       height: 70px;
     line-height: 70px;
-   .logo{float: left;font-size: 30px;font-weight: normal;}
+   .logo{float: left;font-size: 30px;color: $white;}
    .time{float: right;font-size: 16px; }
 }
 </style>

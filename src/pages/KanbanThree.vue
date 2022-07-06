@@ -4,8 +4,8 @@
     <div class="main">
       <div class="row fb-1-2" style="flex-direction: column">
         <Box
-          class="col"
-          style="flex-grow: 0; flex-basis: 13%; margin-top: 0; padding: 0"
+          class="col BoxNone"
+          style="flex-grow: 0; flex-basis: 18%; margin-top: 0; padding: 0"
         >
           <div class="row info">
             <div class="col">
@@ -42,7 +42,7 @@
           </div>
           <div class="row line"></div>
           <div class="row" style="flex-direction: column; position: relative">
-            <h6 class="subtitle" style="position: absolute; top: 10px; left: 35px">
+            <h6 class=" circleDotTitle" style="position: absolute; top: 10px; left: 20px">
               小时节拍
             </h6>
             <div class="row fb-1-2">
@@ -67,7 +67,7 @@
       <div class="row fb-1-2" style="flex-direction: column">
         <Box
           class="col fb-1-2"
-          style="flex-grow: 0; flex-basis: 33.3%; margin-top: 0; padding: 0"
+          style="flex-grow: 0; flex-basis: 26%; margin-top: 0; padding: 0"
         >
           <div class="row">
             <div class="col fb-1-2">
@@ -82,7 +82,7 @@
         </Box>
         <Box class="col">
           <div class="row" style="flex-direction: column; position: relative">
-            <h6 class="subtitle" style="position: absolute; top: 10px; left: 35px">
+            <h6 class=" circleDotTitle" style="position: absolute; top: 10px; left:10px">
               小时节拍
             </h6>
             <div class="row fb-1-2">
@@ -448,6 +448,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 #KanbanThree {
+  //  background-color: #00142e;
   .head {
     flex-basis: 70px;
   }
@@ -497,8 +498,11 @@ export default {
       .num {
         position: relative;
         margin-bottom: 10px;
-        font-size: 35px;
+        font-size: 45px;
         font-weight: bold;
+      }
+      .txt{
+        font-size:$f-16;
       }
     }
   }

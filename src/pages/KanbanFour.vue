@@ -4,14 +4,19 @@
     <div class="main">
       <div class="row fb-1-2">
         <Box class="col"  style="margin-top: 0;padding: 0">
-          <div class="row" style="flex-grow: 0;flex-basis: 30%;">
+          <div class="row" style="flex-direction:column;flex-grow: 0;flex-basis: 30%;">
+            <div class="col" style="margin-top: 3%; flex-grow: 0;flex-basis:30px;">
+              <h6 class=" circleDotTitle">工程不良周报</h6>
+            </div>
             <div class="col">
               <Chart v-if="opt1" :option="opt1" />
               </div>
           </div>
-          <div class="row" style="flex-direction:column;position: relative; padding-top: 30px;">
-          <h6 class="subtitle" style="position: absolute; top:10px;left:5%">不良统计</h6>
-            <div class="row fb-1-2">
+          <div class="row" style="flex-direction:column;">
+            <div class="row" style="flex-grow: 0;flex-basis:30px;">
+              <h6 class=" circleDotTitle">不良统计</h6>
+            </div>
+            <div class="row" style="flex-grow: 0;flex-basis:45%;">
               <div class="col fb-1-2"><Chart v-if="opt2" :option="opt2" /></div>
               <div class="col fb-1-2"><Chart v-if="opt3" :option="opt3" /></div>
             </div>
@@ -24,14 +29,19 @@
       </div>
       <div class="row fb-1-2">
          <Box class="col"  style="margin-top: 0;padding: 0">
-          <div class="row" style="flex-grow: 0;flex-basis: 30%;">
+          <div class="row" style="flex-direction:column;flex-grow: 0;flex-basis: 30%;">
+            <div class="col" style="margin-top: 3%; flex-grow: 0;flex-basis:30px;">
+              <h6 class=" circleDotTitle">工程不良周报</h6>
+            </div>
             <div class="col">
               <Chart v-if="opt1" :option="opt6" />
               </div>
           </div>
-          <div class="row" style="flex-direction:column;position: relative; padding-top: 30px;">
-          <h6 class="subtitle" style="position: absolute; top:10px;left:5%">不良统计</h6>
-            <div class="row fb-1-2">
+          <div class="row" style="flex-direction:column;">
+            <div class="row" style="flex-grow: 0;flex-basis:30px;">
+              <h6 class=" circleDotTitle">不良统计</h6>
+            </div>
+            <div class="row" style="flex-grow: 0;flex-basis:45%;">
               <div class="col fb-1-2"><Chart v-if="opt7" :option="opt2" /></div>
               <div class="col fb-1-2"><Chart v-if="opt8" :option="opt3" /></div>
             </div>
@@ -568,6 +578,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 #KanbanFour {
+      // background-color: #00142e;
   .head {
     flex-basis: 70px;
   }
@@ -576,8 +587,11 @@ export default {
     display: flex;
     flex-direction: row;
   }
-.subtitle::before {
+.circleDotTitle{
+  margin-left:3.5%;
+  &::before {
   background-color: #4fdd00;
+}
 }
 }
 </style>
