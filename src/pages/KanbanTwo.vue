@@ -193,7 +193,7 @@ const opt2 = {
     orient: 'vertical',
     top: 'center',
     left: 'right',
-    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine'],
+    data: ['设备1', '设备2', '设备3', '设备4', '设备5'],
   },
   grid: {
     top: '20%',
